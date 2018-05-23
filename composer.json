@@ -1,18 +1,10 @@
 {
-	"name": "hightman/xunsearch",
+	"name": "itdocs/xunsearch",
 	"description": "xunsearch php sdk, include yii, yii2 supports",
 	"keywords": ["xunsearch", "search engine", "yii", "yii2"],
-	"homepage": "http://www.xunsearch.com/",
+	"homepage": "http://www.itdocs.org/",
 	"type": "library",
 	"license": "GPL-2.0+",
-	"authors": [
-		{
-			"name": "hightman",
-			"email": "hightman@twomice.net",
-			"homoepage": "http://hightman.cn/",
-			"role": "Founder and project leader"
-		}
-	],
 	"support": {
 		"issues": "https://github.com/hightman/xunsearch/issues?q=is%3Aopen",
 		"forum": "http://bbs.xunsearch.com/",
@@ -27,7 +19,7 @@
 	"autoload": {
 		"classmap": ["lib/", "wrapper/yii-ext/"],
 		"psr-4": {
-			"hightman\\xunsearch\\": "wrapper/yii2-ext/"
+			"itdocs\\xunsearch\\": "wrapper/yii2-ext/"
 		}
 	},
 	"bin": [
