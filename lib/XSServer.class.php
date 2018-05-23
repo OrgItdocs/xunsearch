@@ -454,7 +454,8 @@ class XSServer extends XSComponent
 		// connect to server
 		$conn = $this->_conn;
 		if (is_int($conn) || is_numeric($conn)) {
-			$host = 'localhost';
+			//$host = 'localhost';
+            $host = !empty($this->xs->getConfig()['server.host'])?$this->xs->getConfig()['server.host']:'localhost';
 			$port = intval($conn);
 		} elseif (!strncmp($conn, 'file://', 7)) {
 			// write-only for saving index exchangable data to file
