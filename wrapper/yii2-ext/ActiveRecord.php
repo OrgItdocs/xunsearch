@@ -2,13 +2,13 @@
 /**
  * xunsearch ActiveRecord class file
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2014 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
  * @version $Id$
  */
-namespace hightman\xunsearch;
+namespace itdocs\xunsearch;
 
 use Yii;
 use yii\db\BaseActiveRecord;
@@ -28,7 +28,7 @@ use yii\helpers\StringHelper;
  * @method array matched() matched(void)
  * 
  * @author xjflyttp <xjflyttp@gmail.com>
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @since 1.4.9
  */
 class ActiveRecord extends BaseActiveRecord

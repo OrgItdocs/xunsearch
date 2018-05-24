@@ -2,7 +2,7 @@
 /**
  * XSServer 类定义文件
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2011 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
@@ -15,7 +15,7 @@
  * 命令结构参见 C 代码中的 struct xs_cmd 定义, 头部长度为 8字节.
  * 
  * @property int $arg 参数, 相当于 (arg1<<8)|arg2 的值
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */
@@ -114,7 +114,7 @@ class XSCommand extends XSComponent
  * 
  * @property string $project 当前使用的项目名
  * @property-write int $timeout 服务端IO超时秒数, 默认为 5秒
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */

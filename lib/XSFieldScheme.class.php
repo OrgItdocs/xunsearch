@@ -2,7 +2,7 @@
 /**
  * XSFieldScheme 类定义文件
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2011 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
@@ -14,7 +14,7 @@
  * 每个方案包含若干个字段结构对象 {@link XSFieldMeta}
  * 每个方案必须并且只能包含一个类型为 ID 的字段, 支持 foreach 遍历所有字段
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */
@@ -217,7 +217,7 @@ class XSFieldScheme implements IteratorAggregate
  * 数据字段结构元数据
  * 每个搜索项目包含若干个字段, 字段元数据保存在项目的 ini 配置文件中
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  * @see XS::loadIniFile()

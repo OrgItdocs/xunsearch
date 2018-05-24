@@ -2,7 +2,7 @@
 /**
  * Yii-Xunsearch class file
  *
- * @author Hightman <hightman2[at]yahoo[dot]com[dot]cn>
+ * @author itdocs <itdocs2[at]yahoo[dot]com[dot]cn>
  * @link http://www.xunsearch.com/
  * @version 1.0
  */
@@ -13,7 +13,7 @@
  * @method XSIndex getIndex()
  * @method XSSearch getSearch()
  *
- * @author hightman
+ * @author itdocs
  * @version $Id$
  * @since 1.0
  */

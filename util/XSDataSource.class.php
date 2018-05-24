@@ -2,7 +2,7 @@
 /**
  * XSDataSource 批量索引数据源定义文件
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2011 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
@@ -13,7 +13,7 @@
  * 索引数据源抽象基类
  * 此部分代码仅用于 indexer 工具程序
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.utilf
  */
@@ -120,7 +120,7 @@ abstract class XSDataSource
 /**
  * SQL 数据库源
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.util 
  */
@@ -262,7 +262,7 @@ class XSDatabaseDataSource extends XSDataSource
  * JSON 数据源
  * 要求以 \n (换行符) 分割, 每行为一条完整的 json 数据
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.util  
  */
@@ -356,7 +356,7 @@ class XSJsonDataSource extends XSDataSource
  * CSV 数据源
  * 可在文件开头指定字段(必须是有效字段), 否则将默认按照 {@link XS} 项目字段顺序填充
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <hightman@twomice.net>
  * @version 1.0.0
  * @package XS.util  
  */

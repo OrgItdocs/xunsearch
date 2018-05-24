@@ -2,7 +2,7 @@
 /**
  * XS 主类定义文件
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2011 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
@@ -53,7 +53,7 @@ include_once XS_LIB_ROOT . '/xs_cmd.inc.php';
 /**
  * XS 异常类定义, XS 所有操作过程发生异常均抛出该实例
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */
@@ -114,7 +114,7 @@ class XSException extends Exception
 /**
  * XS 错误异常类定义, XS 所有操作过程发生错误均抛出该实例
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */
@@ -165,7 +165,7 @@ class XSErrorException extends XSException
  * $obj->text = $a; // 等同事调用 $obj->setText($a)
  * </pre>
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */
@@ -243,7 +243,7 @@ class XSComponent
  * @property-read XSIndex $index 索引操作对象
  * @property-read XSSearch $search 搜索操作对象
  * @property-read XSFieldMeta $idField 主键字段
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS
  */

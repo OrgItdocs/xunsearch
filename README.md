@@ -29,7 +29,7 @@ Composer 支持
 
 自 v1.4.9 起，通过 subtree 功能将 xs-sdk-php 分离成为一个只读的子仓库，
 以支持通过 [composer](https://getcomposer.org) 安装。我们的包名称为
-`hightman/xunsearch`，内含全部 PHP-SDK 的库文件，还包括支持 Yii 的扩展类。
+`itdocs/xunsearch`，内含全部 PHP-SDK 的库文件，还包括支持 Yii 的扩展类。
 
 
 ### 安装
@@ -39,14 +39,14 @@ Composer 支持
 可以直接运行
 
 ```
-composer require --prefer-dist hightman/xunsearch "*@beta"
+composer require --prefer-dist itdocs/xunsearch "*@beta"
 ```
 
 或者将以下内容添加到您的项目根目录 `composer.json` 中的 `require` 章节，
 然后运行 `composer install`
 
 ```
-"hightman/xunsearch": "*@beta"
+"itdocs/xunsearch": "*@beta"
 ```
 
 > tip: 如果您打算用代码仓库中的最新版本，请将星号改为 dev-master。
@@ -67,7 +67,7 @@ vendor/bin/xs help
 // 加载 vendor 的 autoload 文件
 require_once 'vendor/autoload.php';
 
-// 默认的 xunsearch 应用配置文件目录为 vendor/hightman/xunsearch/app
+// 默认的 xunsearch 应用配置文件目录为 vendor/itdocs/xunsearch/app
 // 如有必要，请通过常量 XS_APP_ROOT 定义
 define ('XS_APP_ROOT', '/path/to/ini')
 
@@ -131,14 +131,14 @@ $docs = Yii::app()->search->setLimit(5, 10)->search();	// 取得搜索结果文�
 	'components => [
 		// ... other components ...
 		'xunsearch' => [
-			'class' => 'hightman\xunsearch\Connection',	// 此行必须
-			'iniDirectory' => '@app/config',	// 搜索 ini 文件目录，默认：@vendor/hightman/xunsearch/app
+			'class' => 'itdocs\xunsearch\Connection',	// 此行必须
+			'iniDirectory' => '@app/config',	// 搜索 ini 文件目录，默认：@vendor/itdocs/xunsearch/app
 			'charset' => 'utf-8',	// 指定项目使用的默认编码，默认即时 utf-8，可不指定
 		],
 	],
 ```
 
-接下来，你可以通过以下代码获取到 `hightman\xunsearch\Database` 对象，该对像和 yii-1.x 的
+接下来，你可以通过以下代码获取到 `itdocs\xunsearch\Database` 对象，该对像和 yii-1.x 的
 `EXunSearch` 用法很相似，通过魔术方法，能够依次检索以下对象的方法列表而直接调用：
 
 ```php
@@ -149,19 +149,19 @@ $search = $db->getSearch();
 $index = $db->getIndex();
 ```
 
-- [XS][1] 优先调用该对象方法，如有必要，可直接通过 `hightman\xunsearch\Database::$xs` 属性访问。
-- [XSIndex][2] 紧接着检查索引管理方法，如有必要，可直接通过 `hightman\xunsearch\Database::$index` 属性访问。
-- [XSSearch][3] 紧接着检查索引管理方法，如有必要，可直接通过 `hightman\xunsearch\Database::$search` 属性访问。
+- [XS][1] 优先调用该对象方法，如有必要，可直接通过 `itdocs\xunsearch\Database::$xs` 属性访问。
+- [XSIndex][2] 紧接着检查索引管理方法，如有必要，可直接通过 `itdocs\xunsearch\Database::$index` 属性访问。
+- [XSSearch][3] 紧接着检查索引管理方法，如有必要，可直接通过 `itdocs\xunsearch\Database::$search` 属性访问。
 
 具体用法不再赘述，下面重点讲讲如何通过 ActiveRecord 方法来检索和创建索引，由于遵循 yii2 的思想进行开发设计，
 使用起来非常方便和简单。
 
 #### 创建 AR 对象
-首先必须创建一个继承自 `hightman\xunsearch\ActiveRecord` 的模型类，默认情况下会以全小写的类名字作为
-ini 文件名。如需指定，请自行覆盖编写 `hightman\xunsearch\ActiveRecord::projectName()`。通常代码如下：
+首先必须创建一个继承自 `itdocs\xunsearch\ActiveRecord` 的模型类，默认情况下会以全小写的类名字作为
+ini 文件名。如需指定，请自行覆盖编写 `itdocs\xunsearch\ActiveRecord::projectName()`。通常代码如下：
 
 ```php
-class Demo extends \hightman\xunsearch\ActiveRecord
+class Demo extends \itdocs\xunsearch\ActiveRecord
 {
     /*public static function projectName() {
         return 'another_name';	// 这将使用 @app/config/another_name.ini 作为项目名
@@ -224,7 +224,7 @@ $condition = ['WEIGHT', 'subject', 'hello', 0.5]; // 相当于额外调用 XSSea
 $query->where($condition);
 ```
 
-对于 `hightman\xunsearch\ActiveQuery` 对象，主要支持以下几个方法获取和操作：
+对于 `itdocs\xunsearch\ActiveQuery` 对象，主要支持以下几个方法获取和操作：
 
 - **asArray()**: 以数组形式返回数据
 - **one()**: 返回一行数据
@@ -265,7 +265,7 @@ $scws = $db->getScws();
 
 #### 使用 xunsearch DebugPanel
 
-为便于调试，还提供了一个 `hightman\xunsearch\DebugPanel` 对象，可以集成到 debug 模块中，
+为便于调试，还提供了一个 `itdocs\xunsearch\DebugPanel` 对象，可以集成到 debug 模块中，
 可在调试工具条和面板中显示 `xunsearch` 有关的查询以及耗时情况。
 
 要想启用这个很容易，只要在主配置文件中加入以下代码：
@@ -278,7 +278,7 @@ $scws = $db->getScws();
             'class' => 'yii\\debug\\Module',
             'panels' => [
                 'xunsearch' => [
-                    'class' => 'hightman\\xunsearch\\DebugPanel',
+                    'class' => 'itdocs\\xunsearch\\DebugPanel',
                 ],
             ],
         ],

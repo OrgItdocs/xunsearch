@@ -2,13 +2,13 @@
 /**
  * xunsearch Connection class file
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2014 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
  * @version $Id$
  */
-namespace hightman\xunsearch;
+namespace itdocs\xunsearch;
 
 use Yii;
 use yii\base\Component;
@@ -19,7 +19,7 @@ use yii\base\Component;
  * @property-read string $version the version of xunsearch sdk.
  *
  * @author xjflyttp <xjflyttp@gmail.com>
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @since 1.4.9
  */
 class Connection extends Component
@@ -32,9 +32,9 @@ class Connection extends Component
 	/**
 	 * @var string xunsearch ini file directory
 	 * Alias supportted, i.e: '@app/config' or '/path/to/config'
-	 * Default to: @vendor/hightman/xunsearch/app
+	 * Default to: @vendor/itdocs/xunsearch/app
 	 */
-	public $iniDirectory = '@vendor/hightman/xunsearch/app';
+	public $iniDirectory = '@vendor/itdocs/xunsearch/app';
 
 	/**
 	 * @var string charset of current app, deafult to utf-8

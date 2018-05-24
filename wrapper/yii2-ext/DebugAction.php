@@ -2,13 +2,13 @@
 /**
  * xunsearch DebugPanel class file
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2014 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
  * @version $Id$
  */
-namespace hightman\xunsearch;
+namespace itdocs\xunsearch;
 
 use yii\base\Action;
 use yii\base\NotSupportedException;
@@ -21,7 +21,7 @@ use Yii;
 /**
  * Debug Action is used by [[DebugPanel]] to perform xunsearch queries using ajax.
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @since 1.4.9
  */
 class DebugAction extends Action

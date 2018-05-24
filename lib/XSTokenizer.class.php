@@ -2,7 +2,7 @@
 /**
  * XSTokenizer 接口和内置分词器文件
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2011 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
@@ -13,7 +13,7 @@
  * 自定义字段词法分析器接口
  * 系统将按照 {@link getTokens} 返回的词汇列表对相应的字段建立索引
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -36,7 +36,7 @@ interface XSTokenizer
 /**
  * 内置空分词器
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -52,7 +52,7 @@ class XSTokenizerNone implements XSTokenizer
 /**
  * 内置整值分词器
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -68,7 +68,7 @@ class XSTokenizerFull implements XSTokenizer
 /**
  * 内置的分割分词器
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -95,7 +95,7 @@ class XSTokenizerSplit implements XSTokenizer
 /**
  * 内置的定长分词器
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -126,7 +126,7 @@ class XSTokenizerXlen implements XSTokenizer
 /**
  * 内置的步长分词器
  * 
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  */
@@ -162,7 +162,7 @@ class XSTokenizerXstep implements XSTokenizer
 /**
  * SCWS - 分词器(与搜索服务端通讯)
  *
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @version 1.0.0
  * @package XS.tokenizer
  * @since 1.3.1

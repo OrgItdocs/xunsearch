@@ -2,13 +2,13 @@
 /**
  * xunsearch QueryBuilder class file
  *
- * @author hightman
+ * @author itdocs
  * @link http://www.xunsearch.com/
  * @copyright Copyright &copy; 2014 HangZhou YunSheng Network Technology Co., Ltd.
  * @license http://www.xunsearch.com/license/
  * @version $Id$
  */
-namespace hightman\xunsearch;
+namespace itdocs\xunsearch;
 
 use Yii;
 use yii\base\BaseObject;
@@ -18,7 +18,7 @@ use yii\base\InvalidParamException;
  * QueryBuilder builds query string based on the specification given as a [[ActiveQuery]] object.
  *
  * @author xjflyttp <xjflyttp@gmail.com>
- * @author hightman <hightman@twomice.net>
+ * @author itdocs <itdocs@twomice.net>
  * @since 1.4.9
  */
 class QueryBuilder extends BaseObject

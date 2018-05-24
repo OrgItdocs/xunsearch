@@ -29,7 +29,7 @@ Usage:
         // ... other components ...
         'search' => array(
             'class' => 'ext.xunsarch.EXunSearch',
-            'xsRoot' => '/Users/hightman/Projects/xunsearch',  // xunsearch 安装目录
+            'xsRoot' => '/Users/itdocs/Projects/xunsearch',  // xunsearch 安装目录
             'project' => 'demo', // 搜索项目名称或对应的 ini 文件路径
             'charset' => 'utf-8', // 您当前使用的字符集（索引、搜索结果）
         ),
